@@ -3,6 +3,7 @@
     "@whatwg-node/server": "0.9"
   },
   "devDependencies": {
+    "jest": "^30.4.2",
     "nodemon": "3"
   },
   "scripts": {
@@ -11,6 +12,11 @@
     "start:deno": "deno --allow-env --allow-net deno.mjs",
     "dev:deno": "deno --watch --allow-env --allow-net deno.mjs",
     "start:bun": "bun bun.mjs",
-    "dev:bun": "bun --watch bun.mjs"
-  },"name": "gemini"
+    "dev:bun": "bun --watch bun.mjs",
+    "test": "jest"
+  },
+  "name": "gemini",
+  "jest": {
+    "testEnvironment": "node"
+  }
 }
