@@ -1,4 +1,4 @@
-node_modules
-.netlify
-.vercel
-.wrangler
+```gitignore
+__pycache__/
+*.pyc
+```
